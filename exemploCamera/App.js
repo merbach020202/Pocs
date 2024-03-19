@@ -9,7 +9,7 @@ import {
   Alert,
 } from "react-native";
 
-import { Camera, CameraType, Constants } from "expo-camera";
+import { Camera, CameraType } from "expo-camera";
 import * as MediaLibrary from 'expo-media-library'
 
 import { FontAwesome } from "@expo/vector-icons";
@@ -36,12 +36,6 @@ export default function App() {
 
     setOpenModal(false);
   }
-
-  /* 
-    Quando salvar a foto - poder apagar da galeria
-    Botão para ativar o flash 
-    forma de recrregar o autofocus
-  */
 
   async function SavePhoto() {
     if( photo ) {
